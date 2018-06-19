@@ -1,0 +1,518 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "微软雅黑", "Microsoft YaHei", Avenir, "Avenir Next",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,
+input[type="submit"] {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.col-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.col-card-float {
+  overflow: hidden;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* .navbar-page-margin {
+  margin-top: 46px;
+}
+
+.static-navbar-page-margin {
+  margin-top: 95px;
+} */
+
+.banner {
+  min-height: 250px;
+  position: relative;
+  background-size: cover;
+  background-color: #e3e3e3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.account-center-holder {
+  position: relative;
+  background: #f0f0f0;
+}
+
+.account-center {
+  position: relative;
+  top: -45px;
+  background: white;
+  min-height: 100px;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #d7d7d7;
+}
+
+.nuxt-progress {
+  z-index: 9999999;
+}
+
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.modal-mask .modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-mask .modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  z-index: 2;
+}
+
+.modal-mask .modal-wrapper .modal-container {
+  width: 500px;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 414px) {
+  .modal-mask .modal-wrapper .modal-container {
+    width: 100%;
+  }
+
+  .modal-mask .modal-wrapper {
+    width: 92%;
+    /* width: 100%;
+    padding: 0 10px;
+    max-width: 400px; */
+  }
+  .modal-container {
+    width: 100%;
+  }
+
+  .custom-padding {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+
+  .custom-padding-none {
+    padding: 0 !important;
+  }
+}
+
+.modal-mask .modal-wrapper .modal-container .modal-header {
+  border: none;
+  padding: 20px;
+}
+.modal-mask .modal-wrapper .modal-container .modal-header .close-btn {
+  position: absolute;
+  right: 11px;
+  top: 4px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.modal-mask .modal-wrapper .modal-container .modal-header h4 {
+  margin-top: 0;
+  color: #000;
+  text-align: left;
+}
+
+.modal-mask .modal-wrapper .modal-container .modal-body {
+  padding: 0 20px;
+}
+
+.modal-mask .modal-wrapper .modal-container .modal-body p {
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+  color: #707070;
+}
+
+.modal-mask .modal-wrapper .modal-container .modal-footer {
+  text-align: right;
+  padding: 20px;
+  border-top: 0 !important;
+}
+
+.modal-footer .btn-confirm {
+  border: 0;
+}
+
+.modal-footer .btn-confirm:hover {
+  background: none;
+  color: dodgerblue;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.cursor-auto {
+  cursor: auto !important;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+.text-blue {
+  color: blue !important;
+}
+.text-red {
+  color: red !important;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.bg-fade {
+  background: #f0f0f0 !important;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.banks-sprite {
+  background: url("~assets/images/banks-sprite.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.bank-sprite {
+  height: 28px;
+  width: 28px;
+  /* width: 50px; */
+  display: inline-block;
+  background-position-x: -60px;
+  background-position-y: -19px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Microsoft Yahei", "微软雅黑", "Helvetica Neue", Helvetica, Arial,
+    sans-serif !important;
+}
+
+.provider-modal-body {
+  padding: 15px !important;
+}
+
+.provider-modal-header {
+  padding: 15px !important;
+}
+
+.text-black {
+  color: #222;
+}
+.display-block {
+  display: block !important;
+}
+.v-select .dropdown-toggle {
+  white-space: nowrap !important;
+}
+
+/* PROVIDER MODAL */
+@media (min-width: 376px) and (max-width: 414px) {
+  #provider-select .v-select .selected-tag {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 290px;
+    display: block;
+    overflow: hidden;
+  }
+}
+@media (min-width: 361px) and (max-width: 375px) {
+  #provider-select .v-select .selected-tag {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 260px;
+    display: block;
+    overflow: hidden;
+  }
+}
+@media (min-width: 321px) and (max-width: 360px) {
+  #provider-select .v-select .selected-tag {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 230px;
+    display: block;
+    overflow: hidden;
+  }
+}
+@media (max-width: 320px) {
+  #provider-select .v-select .selected-tag {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-container {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+.casino.static-navbar-page-margin-not .fishing.static-navbar-page-margin-not {
+  margin-top: 43px;
+}
+
+.static-navbar-page-margin,
+.navbar-page-margin {
+  margin-top: 93px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .static-navbar-page-margin {
+    margin-top: 93px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .static-navbar-page-margin {
+    margin-top: 93px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .static-navbar-page-margin {
+    margin-top: 93px;
+  }
+
+  .casino.static-navbar-page-margin .fishing.static-navbar-page-margin,
+  .navbar-page-margin {
+    margin-top: 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .static-navbar-page-margin {
+    margin-top: 0;
+  }
+
+  .casino.static-navbar-page-margin .fishing.static-navbar-page-margin,
+  .navbar-page-margin {
+    margin-top: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .static-navbar-page-margin {
+    margin-top: 40px;
+  }
+
+  .casino.static-navbar-page-margin .fishing.static-navbar-page-margin,
+  .navbar-page-margin,
+  .static-navbar-page-margin {
+    margin-top: 0;
+  }
+}

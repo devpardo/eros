@@ -1,0 +1,16 @@
+.ie-topbar-icon {
+  width: 20px;
+  height: 20px;
+}
+.ie-logo > img {
+  width: 120px;
+  height: 32px;
+  margin-top: 0px;
+}
+.ie-line {
+  top: 5px;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}

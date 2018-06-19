@@ -1,0 +1,79 @@
+[
+  {
+    "id": 17,
+    "picUrl": "https://cdn.mr007.co/banners/banner04.jpg",
+    "bannerName": "直播互动赢大礼",
+    "bannerTitle": "直播互动赢大礼",
+    "bannerDetail":
+      "亿万直播精彩不停，无限红包再次重磅来袭。<br/> \r\n美女主播带您趣味游戏互动看美女拿红包双重诱惑，赢钱你说了算！",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 18,
+    "picUrl": "https://cdn.mr007.co/banners/banner01.jpg",
+    "bannerName": "四月存送大礼包",
+    "bannerTitle": "四月限时存送大礼包",
+    "bannerDetail":
+      "四月存送大礼包再次来袭，所有场馆均可游戏，<br/>\r\n一次存款，7天返利，每日返利98奖金，娱乐无限，爽嗨到底。",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 12,
+    "picUrl": "https://cdn.mr007.co/banners/banner03.jpg",
+    "bannerName": "彩票返水大本赢",
+    "bannerTitle": "彩票返水大本赢",
+    "bannerDetail":
+      "同行业内最高返水1%比例，每日游戏，次日准点派发返水红利，<br/>\r\n亿万先生彩票，高额反水无上限，财源滚滚好运来！",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 13,
+    "picUrl": "https://cdn.mr007.co/banners/banner00.jpg",
+    "bannerName": "返水加码送不停",
+    "bannerTitle": "返水加码送不停",
+    "bannerDetail":
+      "活动期间，AG平台的每日返水将额外加码，<br/>\r\n只需1倍流水即可获得高额返水奖励，最高可达5888元！",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 14,
+    "picUrl": "https://cdn.mr007.co/banners/banner02.jpg",
+    "bannerName": "过关斩将锦标赛",
+    "bannerTitle": "过关斩将锦标赛",
+    "bannerDetail": "超50万人民币奖池，周周赢取！<br/>\r\n",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 48,
+    "picUrl": "https://cdn.mr007.co/banners/4.jpg",
+    "bannerName": "Alt4",
+    "bannerTitle": " AG注单每周送888",
+    "bannerDetail": "全新AG活动火力全开，来亿万夺王称霸！",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 16,
+    "picUrl": "https://cdn.mr007.co/banners/5.jpg",
+    "bannerName": "Alt5",
+    "bannerTitle": " 电竞注单加码送",
+    "bannerDetail": "投注电竞赛事任意注单即可获赠加送388！",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  },
+  {
+    "id": 15,
+    "picUrl": "https://cdn.mr007.co/banners/banner06.jpg",
+    "bannerName": "无风险体育投注",
+    "bannerTitle": " 无风险体育投注",
+    "bannerDetail":
+      "我们将每周精选一场赛事，会员投注该场赛事并参加保险，<br/>\r\n若最后注单结果为输，可获得100%输额返还，最高可达888元。",
+    "buttonCaption": "查看详情",
+    "buttonLink": "promo.php"
+  }
+]
